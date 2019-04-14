@@ -24,10 +24,10 @@ public class Menu {
                 case '4': searchPlayer(teams);
                 break;
 
-                case '5': printAllRoles();
+                case '5': teamBuilder(teams);
                 break;
 
-                case '9': teamBuilder(teams);
+                case '0': System.exit(0);
                 break;
 
                 default: System.out.println("\n[***] An error has occurred try again");
@@ -75,7 +75,7 @@ public class Menu {
     }
 
 
-    public static Team searchTeam(ArrayList<Team> teams) throws IndexOutOfBoundsException{
+    public static Team searchTeam(ArrayList<Team> teams){
 
         Scanner input = scanIn();
         int found = -1;

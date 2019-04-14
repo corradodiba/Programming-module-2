@@ -1,5 +1,3 @@
-import java.util.HashMap;
-
 public class Player extends Person {
 
     private int shirtNumber;
